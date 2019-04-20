@@ -1,0 +1,6 @@
+credentials.*
+.terraform*
+terraform.tfstate*
+secrets.tfvars
+output.txt
+app.tfplan
