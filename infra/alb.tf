@@ -24,7 +24,7 @@ resource "aws_alb_target_group" "app" {
 
 resource "aws_alb_listener" "backend_app" {
   load_balancer_arn = "${aws_alb.main.id}"
-  port              = "8080"
+  port              = "80"
   protocol          = "HTTP"
 
   default_action {
