@@ -6,11 +6,13 @@ data "template_file" "backend_app" {
   template = "${file("${path.module}/templates/task-definition/backend_app.json.tpl")}"
 
   vars {
-    app_image      = "${var.app_image}"
-    fargate_cpu    = "${var.fargate_cpu}"
-    fargate_memory = "${var.fargate_memory}"
-    aws_region     = "${var.region}"
-    app_port       = "${var.app_port}"
+    app_image             = "${var.app_image}"
+    fargate_cpu           = "${var.fargate_cpu}"
+    fargate_memory        = "${var.fargate_memory}"
+    aws_region            = "${var.region}"
+    app_port              = "${var.app_port}"
+    s3_manager_access_key = "${var.s3_manager_access_key}"
+    s3_manager_secret_key = "${var.s3_manager_secret_key}"
   }
 }
 

@@ -38,3 +38,11 @@ variable "fargate_memory" {
   description = "Fargate instance memory to provision (in MiB)"
   default     = "1024"
 }
+
+variable "s3_manager_access_key" {
+  description = "input for AWS access key id"
+}
+
+variable "s3_manager_secret_key" {
+  description = "input for AWS secret key"
+}

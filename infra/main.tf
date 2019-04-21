@@ -5,12 +5,14 @@ provider "aws" {
   version    = "~> 2.5"
 }
 
-module "containers" {
-  source = "containers"
-  region = "${var.region}"
-}
-
 module "media-storage" {
   source = "file-storage"
   region = "${var.region}"
+}
+
+module "containers" {
+  source                = "containers"
+  region                = "${var.region}"
+  s3_manager_access_key = "${module.media-storage.id}"
+  s3_manager_secret_key = "${module.media-storage.secret}"
 }

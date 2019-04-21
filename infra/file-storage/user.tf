@@ -24,11 +24,3 @@ resource "aws_iam_user_group_membership" "media-managers-group" {
     "${aws_iam_group.media-manager.name}",
   ]
 }
-
-output "id" {
-  value = "${aws_iam_access_key.s3-sts-manager.id}"
-}
-
-output "secret" {
-  value = "${aws_iam_access_key.s3-sts-manager.secret}"
-}

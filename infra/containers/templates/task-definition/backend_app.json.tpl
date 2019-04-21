@@ -20,8 +20,8 @@
       }
     ],
     "environment" : [
-      { "name" : "AWS_ACCESS_KEY_ID", "value" : "AKIARDGYDZHT6PA6DUFV" },
-      { "name" : "AWS_SECRET_ACCESS_KEY", "value" : "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" }
+      { "name" : "AWS_ACCESS_KEY_ID", "value" : "${s3_manager_access_key}" },
+      { "name" : "AWS_SECRET_ACCESS_KEY", "value" : "${s3_manager_secret_key}" }
     ]
   }
 ]
