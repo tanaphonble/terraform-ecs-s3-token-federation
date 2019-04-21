@@ -18,6 +18,10 @@
         "containerPort": ${app_port},
         "hostPort": ${app_port}
       }
+    ],
+    "environment" : [
+      { "name" : "AWS_ACCESS_KEY_ID", "value" : "" },
+      { "name" : "AWS_SECRET_ACCESS_KEY", "value" : "" }
     ]
   }
 ]
