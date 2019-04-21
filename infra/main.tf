@@ -4,3 +4,8 @@ provider "aws" {
   region     = "${var.region}"
   version    = "~> 2.5"
 }
+
+module "containers" {
+  source = "containers"
+  region = "${var.region}"
+}

@@ -14,5 +14,8 @@ apply:
 destroy:
 	@app/destroy.sh
 
+# show terraform output
+output:
+	@app/output.sh
 
 reload: destroy plan apply
