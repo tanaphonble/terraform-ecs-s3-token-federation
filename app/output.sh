@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd infra
-terraform output
+terraform output > app.output

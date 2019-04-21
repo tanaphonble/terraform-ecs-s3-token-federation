@@ -9,3 +9,8 @@ module "containers" {
   source = "containers"
   region = "${var.region}"
 }
+
+module "media-storage" {
+  source = "file-storage"
+  region = "${var.region}"
+}

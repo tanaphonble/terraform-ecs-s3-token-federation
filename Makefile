@@ -9,6 +9,7 @@ plan:
 # apply plan
 apply:
 	@app/apply.sh
+	@app/output.sh
 
 # destroying infrastructure
 destroy:
