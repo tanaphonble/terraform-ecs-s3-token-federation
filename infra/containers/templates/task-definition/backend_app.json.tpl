@@ -1,6 +1,6 @@
 [
   {
-    "name": "cb-app",
+    "name": "backend-app",
     "image": "${app_image}",
     "cpu": ${fargate_cpu},
     "memory": ${fargate_memory},
@@ -8,7 +8,7 @@
     "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/cb-app",
+          "awslogs-group": "/ecs/backend-app",
           "awslogs-region": "${aws_region}",
           "awslogs-stream-prefix": "ecs"
         }
@@ -20,8 +20,8 @@
       }
     ],
     "environment" : [
-      { "name" : "AWS_ACCESS_KEY_ID", "value" : "" },
-      { "name" : "AWS_SECRET_ACCESS_KEY", "value" : "" }
+      { "name" : "AWS_ACCESS_KEY_ID", "value" : "AKIARDGYDZHT6PA6DUFV" },
+      { "name" : "AWS_SECRET_ACCESS_KEY", "value" : "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" }
     ]
   }
 ]
