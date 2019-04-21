@@ -22,16 +22,12 @@
 ```txt
 access_key = <<ACCESS_KEY>>
 secret_key = <<SECRET_KEY>>
-database_name = <<DATABASE_NAME>>
-database_username = <<DATABASE_USERNAME>>
-database_password = <<DATABASE_PASSWORD>>
 ```
 
-## Deploy AWS
+## Identity changes
 
 1. run
-   > make apply
-2. answer `yes`
+   > make deploy
 
 ## Clear
 

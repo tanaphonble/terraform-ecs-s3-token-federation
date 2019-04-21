@@ -11,11 +11,17 @@ apply:
 	@app/apply.sh
 	@app/output.sh
 
+# deploying new infrastructure to AWS
+deploy:
+	@app/plan.sh
+	@app/apply.sh
+	@app/output.sh
+
 # destroying infrastructure
 destroy:
 	@app/destroy.sh
 
-# show terraform output
+# checkout infrastructure's output
 output:
 	@app/output.sh
 
