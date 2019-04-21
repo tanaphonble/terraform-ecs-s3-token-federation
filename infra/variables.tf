@@ -23,13 +23,8 @@ variable "app_port" {
 
 variable "app_count" {
   description = "Number of docker containers to run"
-  default     = 0
+  default     = "2"
 }
-
-# variable "ecs_autoscale_role" {
-#   description = "Role arn for the ecsAutocaleRole"
-#   default     = "arn:aws:iam::075615160807:role/ecsAutoscaleRole"
-# }
 
 variable "ecs_task_execution_role" {
   description = "Role arn for the ecsTaskExecutionRole"
